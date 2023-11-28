@@ -1,0 +1,7 @@
+<h1> list des produits dont le prix est inferieur a 100 euros ou le  stock superieur a 20 unites</h1>
+<div *ngFor="let p of listproduit">
+<app-produit  [produit]="p" *ngIf="p.prix > 100 || p.stock > 20" >
+
+</app-produit>
+</div>
+
